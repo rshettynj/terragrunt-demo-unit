@@ -3,7 +3,8 @@ include "root" {
 }
 
 terraform {
-  source = "file:///data/terragrunt/modules/s3"
+  #source = "file:///data/terragrunt/modules/s3"
+  source = "git::https://github.com/rshettynj/terragrunt-demo-modules.git/s3?ref=master"
 }
 
 inputs = {

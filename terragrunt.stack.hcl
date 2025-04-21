@@ -1,7 +1,8 @@
 unit "mys3" {
 
   #Terragrunt pulls the module unit source from below file system location
-  source = "./s3"
+  #source = "./s3"
+  source = "git::https://github.com/rshettynj/terragrunt-demo-unit.git//s3?ref=master"
 
      #terragrunt puts the pulled source location data to below path location under .terragrunt-stack folder. 
   path = "mys3"
